@@ -9,9 +9,19 @@ while i <= 100:
 
 2.Imprimir un listado con los números impares desde 1 hasta 999 y seguidamente otro listado con los números pares desde 2 hasta 1000.
 ```python
-
+print("Números impares:")
+i = 1
+while i <= 999:
+    print(i)
+    i += 2 #se la suma 2 porque empieza en 3 los impares
 ```
-
+```python
+print("Números impares:")
+i = 2
+while i <= 1000:
+    print(i)
+    i += 1 #se la suma 1 porque empieza en 2 los impares
+```
 3.Imprimir los números pares en forma descendente hasta 2 que son menores o iguales a un número natural n ≥ 2 dado
 ```python
 n=int(input("Digite numero desde el cual descenderan los numeros primos siempre y cuando sea mayor o igual que 2"))  
