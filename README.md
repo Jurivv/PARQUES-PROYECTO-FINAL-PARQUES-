@@ -14,12 +14,27 @@ while i <= 100:
 
 3.Imprimir los números pares en forma descendente hasta 2 que son menores o iguales a un número natural n ≥ 2 dado
 ```python
-
+n=int(input("Digite numero desde el cual descenderan los numeros primos siempre y cuando sea mayor o igual que 2"))  
+i = n
+while i >= 2:
+    i -= 1
+    if i % 2 == 0:
+        print(i)
 ```
 
 4.En 2022 el país A tendrá una población de 25 millones de habitantes y el país B de 18.9 millones. Las tasas de crecimiento anual de la población serán de 2% y 3% respectivamente. Desarrollar un algoritmo para informar en que año la población del país B superará a la de A.
 ```python
+B = 18900000  
+A = 25000000
+tasa_A = 0.02  # 2%
+tasa_B = 0.03  # 3%
+año=int(input("ingrese un año"))
+while B <= A:
+    A *= (1 + tasa_A)
+    B *= (1 + tasa_B)
+    año += 1
 
+print("La población del país B superará a la del país A en el año:", año)
 ```
 
 5.Imprimir el factorial de un número natural n dado.
