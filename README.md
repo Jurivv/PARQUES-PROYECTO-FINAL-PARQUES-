@@ -9,6 +9,14 @@ while i <= 100:
 
 2.Imprimir un listado con los números impares desde 1 hasta 999 y seguidamente otro listado con los números pares desde 2 hasta 1000.
 ```python
+flowchart TD;
+    A(Inicio) --> B[Determinar si un número es par o impar en la
+    siguiente lista comprendida...]; 
+    B --> C; C[X <= 1000]--> E; E{X % 2 == 0} -- Sí --> 
+    F[X es par]; E -- No --> G[X = X+1]; 
+    G --> C
+    F --> H; H(Fin)
+
 print("Números impares:")
 i = 1
 while i <= 999:
@@ -49,12 +57,41 @@ print("La población del país B superará a la del país A en el año:", año)
 
 5.Imprimir el factorial de un número natural n dado.
 ```python
-
+x = int(input("Digite un numero Natural: "))
+if x >=0:
+    a = 1
+    b = 1
+    while a <= x:
+        b = b * a
+        a += 1
+        print ("el factorial de ",x," es: ",b)
+else:
+    print("Digtaste un número fuera de los parametros")
 ```
 
 6.Implementar un algoritmo que permita adivinar un número dado de 1 a 100, preguntando en cada caso si el número es mayor, menor o igual.
 ```python
+import random
 
+cualquierNumero = random.randrange (1,100)
+
+def intro():
+    print("Adivina el Número")
+
+def juego():
+    intentos = 0
+    while True:
+        numeroDigitado = int(input("Digite un número entre el 1 y el 100"))
+        if numeroDigitado > cualquierNumero:
+            intentos += 1
+            print("Creo que el numero es más pequeño")
+        elif numeroDigitado < cualquierNumero:
+            intentos += 1
+            print("Tal vez el número sea mas grande")
+        else:
+            intentos +=1
+            print(f"En horabuena, tu número es ",cualquierNumero )
+            break
 ```
 
 7.implementar un programa que ingrese un número de 2 a 50 y muestre sus divisores.
