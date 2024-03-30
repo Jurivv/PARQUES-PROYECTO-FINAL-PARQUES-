@@ -8,14 +8,14 @@ while i <= 100:
 ```
 
 2.Imprimir un listado con los números impares desde 1 hasta 999 y seguidamente otro listado con los números pares desde 2 hasta 1000.
-flowchart TD;
+```flowchart TD;
     A(Inicio) --> B[Determinar si un número es par o impar en la
     siguiente lista comprendida...]; 
     B --> C; C[X <= 1000]--> E; E{X % 2 == 0} -- Sí --> 
     F[X es par]; E -- No --> G[X = X+1]; 
     G --> C
     F --> H; H(Fin)
-
+```
 ```python
 
 print("Números impares:")
