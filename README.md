@@ -1,5 +1,16 @@
 # Reto_7
 1.Imprimir un listado con los números del 1 al 100 cada uno con su respectivo cuadrado.
+```mermaid
+flowchart TD
+    A[Inicio] --> B[Inicialización: i = 1]
+    B --> C{¿i <= 100?}
+    C -- Sí --> D[Calcula cuadrado: cuadrado = i ** 2]
+    D --> E[Imprime 'El cuadrado de i es cuadrado']
+    E --> F[Incrementa i: i += 1]
+    F --> C
+    C -- No --> G[Fin]
+```
+
 ```python
 i = 1  
 while i <= 100:  
