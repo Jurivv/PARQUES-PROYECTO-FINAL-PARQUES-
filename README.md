@@ -33,6 +33,21 @@ while i <= 1000:
     i += 1 #se la suma 1 porque empieza en 2 los impares
 ```
 3.Imprimir los números pares en forma descendente hasta 2 que son menores o iguales a un número natural n ≥ 2 dado
+```mermaid
+flowchart TD;
+    A(Inicio) --> B[número i ≥ 2];
+    B -->C
+    C{es mayor o igual que 2?} -- Sí --> D[igual que 2];
+    C-- No --> d[Mayor que 2];
+    D-->E[Termina el ciclo] 
+    d-->F[i-= i]
+    D-->g
+    F-->g[i % 2 == 0,verifica si es par]
+    g-->i[se imprimen los primos de i en forma descendente]
+    i-->y[fin]
+
+```
+    
 ```python
 n=int(input("Digite numero desde el cual descenderan los numeros primos siempre y cuando sea mayor o igual que 2"))  
 i = n
