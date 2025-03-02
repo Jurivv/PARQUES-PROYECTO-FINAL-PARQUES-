@@ -1,5 +1,7 @@
-# Proyecto Final
-Este proyecto fue realizado por Juan David Uribe(juribeve@unal.edu.co),Miguel Mauricio Manrique(mmanriqueh@unal.edu.co),Pablo Mendoza(pamendoza@unal.edu.co),Para las clase porgramación de computadores de la universidad Nacional.Elaborado para el profesor Gustavo Adolfo Mojica.
+# Proyecto Final de parques
+Este proyecto fue realizado por Juan David Uribe(juribeve@unal.edu.co),Miguel Mauricio Manrique(mmanriqueh@unal.edu.co),Pablo Mendoza(pamendoza@unal.edu.co).
+Hecho para las clase porgramación de computadores de la universidad Nacional.
+Elaborado para el profesor Gustavo Adolfo Mojica.
 
 ```python
 import tkinter as tk
